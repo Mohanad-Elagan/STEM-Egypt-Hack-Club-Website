@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hero {
+  height: 85vh;
+  background-image: linear-gradient(32deg, rgb(207, 45, 228) 0%, rgb(228, 45, 66) 64%, rgb(206, 41, 60) 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+  position: relative;
+  font-family: "Phantom Sans";
+}
+
+.hero .myquote {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10rem;
+  font-size: 6rem;
+  line-height: 1.2;
+}
+
+.hero .myquote span {
+  display: block;
+}
+
+.hero .myquote span:nth-child(1) {
+  margin-left: -10rem;
+}
+.hero .myquote span:nth-child(2) {
+  margin-left: -5rem;
+}
+.hero .myquote span:nth-child(3) {
+  margin-left: 0rem;
+}
+.hero .myquote span:nth-child(4) {
+  margin-left: 20rem;
+  position: relative;
+}
+
+.hero .myquote span:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  background-color: rgba(252, 252, 252, 0.625);
+  mix-blend-mode: overlay;
+  right: -0.5rem;
+  width: 21.85rem;
+  height: 5.75rem;
+}
+
+.hero .title {
+  position: absolute;
+  background-color: #0b0e14;
+  bottom: -4rem;
+  left: 10rem;
+  color: white;
+  /* mix-blend-mode: screen; */
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(3deg);
+}
+
+.hero .title h1 {
+  font-size: 0.9rem !important;
+  padding-top: 2rem;
+}
+
+.hero .title span {
+  font-size: 1.2rem !important;
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Manrope:wght@800&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text&family=Manrope:wght@800&family=Space+Mono&display=swap");
 
 * {
   margin: 0;
@@ -7,10 +7,13 @@
 
 html,
 body {
-  font-family: 'Bellota Text', sans-serif;
+  font-family: "Bellota Text", sans-serif;
   height: 100%;
-  background-color: #0b0e14;
   color: #fafafa;
+}
+
+body:not(.home-body) {
+  background: #0b0e14;
 }
 
 .cardImgs {
@@ -23,7 +26,7 @@ body {
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -59,8 +62,8 @@ body {
 }
 
 .subwelcome {
-  font-family: 'Syncopate', sans-serif;
-  text-shadow: 1px 1px 1px #92DCE5;
+  font-family: "Syncopate", sans-serif;
+  text-shadow: 1px 1px 1px #92dce5;
   color: firebrick;
   font-size: 1.25em;
 }
@@ -78,7 +81,7 @@ body {
 }
 
 .titletext h1 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 4em;
   font-weight: 800;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -92,7 +95,7 @@ body {
   transition: 0.2s;
   position: relative;
   border-radius: 5px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   text-overflow: ellipsis;
   width: max-content;
   max-width: 70vw;
@@ -107,7 +110,7 @@ body {
   top: 0;
   height: 100%;
   width: 100%;
-  content: ' ';
+  content: " ";
   background: rgba(255, 255, 255, 0.781);
   position: absolute;
   transform: scaleY(0);
@@ -134,9 +137,9 @@ a:hover #form {
 }
 
 .content {
-  font-family: 'Bellota Text', sans-serif;
-  margin-right: 20%;
-  margin-left: 20%;
+  font-family: "Bellota Text", sans-serif;
+  /* margin-right: 20%;
+  margin-left: 20%; */
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
@@ -176,7 +179,7 @@ p a:hover::after {
 }
 
 .navbar {
-  font-family: 'Syncopate', sans-serif;
+  font-family: "Syncopate", sans-serif;
   overflow-y: hidden;
   overflow-x: auto;
   background: rgba(0, 0, 0, 0.2);
@@ -198,17 +201,17 @@ p a:hover::after {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: 'Bellota Text', sans-serif;
+  font-family: "Bellota Text", sans-serif;
   transition: 0.12s;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   background: #ddd;
   color: #020202;
-}
+} */
 
 .welcome {
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   text-shadow: 0px 2px 3px rgba(1, 166, 37, 0.4);
   color: #02a726;
   font-size: 2.3em;
@@ -216,7 +219,7 @@ p a:hover::after {
 }
 
 .welcome::after {
-  content: '_';
+  content: "_";
   animation: blink 1s infinite;
 }
 
@@ -249,7 +252,7 @@ a {
 
 .fa:hover {
   opacity: 0.7;
-  transform: scale(0.9)
+  transform: scale(0.9);
 }
 
 .fa:first-of-type {
@@ -257,7 +260,8 @@ a {
   padding-left: 0.5em;
 }
 
-.email, .phone {
+.email,
+.phone {
   padding: 0.5rem;
 }
 
@@ -332,7 +336,7 @@ iframe {
   }
 
   .welcome {
-    font-family: 'Space Mono', sans-serif;
+    font-family: "Space Mono", sans-serif;
     text-shadow: 0px 2px 3px rgb(14, 163, 9);
     font-size: 1.5em;
   }
@@ -365,7 +369,7 @@ iframe {
 
 .card-title {
   font-size: 1.5em;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-weight: 400;
   line-height: 1.2em;
   padding-bottom: 0.3em;
@@ -400,14 +404,14 @@ iframe {
   }
 }
 
-    button{
-      background:#0b0e14;
-      color:#fafafa;
-    }
-    .light-mode #main1 {
+button {
+  background: #0b0e14;
+  color: #fafafa;
+}
+.light-mode #main1 {
   background-color: #fafafa;
-  color: #0b0e14;}
-
+  color: #0b0e14;
+}
 
 .light-mode .card {
   background-color: #fafafa;
@@ -419,43 +423,145 @@ iframe {
   color: #0b0e14;
 }
 
-    .light-mode #main {
+.light-mode #main {
   background-color: #fafafa;
-  color: #0b0e14;}
+  color: #0b0e14;
+}
 
-    .light-mode a{
-  
-  color: #0b0e14;}
+.light-mode a {
+  color: #0b0e14;
+}
 
-  .light-mode h3{
+.light-mode h3 {
   background-color: #fafafa;
-  color: #0b0e14;}
+  color: #0b0e14;
+}
 
-  .light-mode h2{
+.light-mode h2 {
   background-color: #fafafa;
-  color: #0b0e14;}
+  color: #0b0e14;
+}
 
-.light-mode .fa{
+.light-mode .fa {
   background-color: #fafafa;
-  color: #0b0e14;}
+  color: #0b0e14;
+}
 
-.light-mode .top-background{
-      height: 100%;
-    background-position: center;
-    background-attachment: fixed;
-    right: 50%;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    margin: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.light-mode .top-background {
+  height: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  right: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background: hsl(179deg 100% 50%);
   background: linear-gradient(10deg, hsl(179deg 100% 50%) 0%, hsl(179deg 100% 50%) 100%);
-
 }
+
+/* =============================================== */
+
+nav.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav.navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav.navbar .navbar-brand img {
+  height: 55px;
+}
+
+nav .navbar-nav .nav-link {
+  margin-inline: 0.5rem;
+}
+
+nav .navbar-nav .nav-link:hover {
+  background: #ddd;
+  color: #020202;
+}
+
+nav .navbar-nav .nav-link.active {
+  color: #fff;
+  border-bottom: #fff 2px solid;
+}
+
+nav .navbar-nav .nav-link.active:hover {
+  color: black;
+}
+
+.section-container {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.section-container .welcome {
+  margin-bottom: 1rem;
+}
+
+.club-goals svg {
+  width: 25%;
+  fill: #fff;
+}
+
+.club-goals .card {
+  transition: 0.2s;
+}
+
+.club-goals .card:hover {
+  transform: scale(1.05);
+}
+
+.what-is-a-hacker p {
+  text-align: justify;
+}
+
+.my-bg {
+  margin-top: 5rem;
+  background-color: #0b0e14;
+}
+
+.home-body {
+  background: url("assets/imgs/hacker.jpg");
+  background-attachment: fixed;
+}
+
+.footer-container {
+  background: #0b0e14 url("assets/imgs/pattern.svg");
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul a {
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  color: white;
+}
+
+footer div a svg {
+  fill: white;
+  transition: 0.1s;
+}
+
+footer div a:hover svg {
+  fill: white;
+  transform: scale(1.1);
+}
+
+/* @media (max-width: 991.98px) {
+} */
