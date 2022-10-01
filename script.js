@@ -1,5 +1,5 @@
 function nextTime() {
-  var text = "Apply now! Boot Camp";
+  var text = "Welcome!";
 
   return text;
 
