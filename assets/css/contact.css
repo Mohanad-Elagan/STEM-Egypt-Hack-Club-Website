@@ -23,12 +23,13 @@
 .hero {
   display: flex;
   /* align-items: center; */
+  padding-top: 12vh;
   justify-content: center;
   flex-direction: column;
-  height: 85vh;
+  height: 25rem;
   background-color: #3a863d;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
   font-family: "Phantom Sans";
 }
 
