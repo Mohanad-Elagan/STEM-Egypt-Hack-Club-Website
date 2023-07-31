@@ -299,8 +299,12 @@ a.nav-link{
   padding-right: 1rem;
   background: none;
   border: none;
+  outline: none;
 }
 
+.nav-menu-button:focus {
+  outline: none;
+}
 
 /* .navbar a:hover {
   background: #ddd;
