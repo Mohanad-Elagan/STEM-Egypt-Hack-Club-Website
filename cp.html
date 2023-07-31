@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-lg">
-        <a class="navbar-brand" href="index.html"><img src="assets/imgs/flag-hc-top.svg" alt="HackClub Flag" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+    <nav class="navbar">
+      <div class="navbar-row">
+        <a class="nav-icon-link" href="index.html"><img class="nav-icon" src="assets/imgs/flag-hc-top.svg" alt="HackClub Flag" /></a>
+        <!-- <button class="" type="button">
+          <span class=""></span>
+        </button> -->
+        <div class="nav-items-box" id="">
+          <ul class="nav-items-list">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
@@ -34,11 +34,35 @@
               <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="cp.html">Competitive Programming</a>
-              </li>
+              <a class="nav-link active" href="cp.html">Competitive Programming</a>
+            </li>
           </ul>
         </div>
-      </div>
+        <div class="nav-icon-linkR"> </div>
+        <button class="nav-menu-button"><img class="nav-menu-icon" src="assets/imgs/hamenu.png" alt="Hamburger Menu" /></button>
+
+     </div>
+
+     <div class="nav-items-menu" id="">
+      <ul class="nav-items-list">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="howtojoin.html">Why us?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Meet us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="cp.html">Competitive Programming</a>
+        </li>
+      </ul>
+    </div>
+    
     </nav>
 		
     <div id="main">
@@ -203,5 +227,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 		<script src="mode.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
