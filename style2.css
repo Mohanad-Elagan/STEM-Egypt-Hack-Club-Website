@@ -141,13 +141,6 @@ a:hover #form {
   transition: 0.15s;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .highlights-container{
   display: flex;
   justify-content: center;
@@ -161,12 +154,9 @@ a:hover #form {
 
 .content {
   font-family: "Bellota Text", sans-serif;
+  display: inline-block;
   /* margin-right: 20%;
   margin-left: 20%; */
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   overflow: hidden;
   vertical-align: top;
 }
@@ -456,10 +446,6 @@ iframe {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin:1em 0;
   background: #11151f;
   border-radius: 0.2em;
@@ -730,18 +716,6 @@ footer div a:hover svg {
 }
 
 @media (min-width: 769px) {
-  
-  
-  .card{
-    aspect-ratio : 1.5 / 1;
-    padding-bottom: 0em;
-
-  }
-  .goals-cards-container{
-    display: grid;
-    column-gap: 2em;
-    grid-template-columns: repeat(2, 1fr);
-  }
   .nav-items-list
   {  
     flex-direction: row;
@@ -786,9 +760,6 @@ footer div a:hover svg {
 }
 
 @media (min-width: 1025px) {
-  .card{
-    aspect-ratio : 2 / 1;
-  }
   .nav-items-menu
   {
     max-height: 0;  
