@@ -12,18 +12,23 @@
     <script src="https://unpkg.com/jparticles/browser/jparticles.base.js"></script>
     <script src="https://unpkg.com/jparticles/browser/particle.js"></script>
     <link href="tags.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
   </head>
   <body class="home-body">
     <div class="top-background">
-      <nav class="navbar">
-        <div class="navbar-row">
-          <a class="nav-icon-link" href="index.html"><img class="nav-icon" src="assets/imgs/flag-hc-top.svg" alt="HackClub Flag" /></a>
-          <!-- <button class="" type="button">
-            <span class=""></span>
-          </button> -->
-          <div class="nav-items-box" id="">
-            <ul class="nav-items-list">
+      <div id="particles"></div>
+      <br />
+      <div class="titletext">
+        <h1>STEM Egypt Hack Club</h1>
+        <a href="index.html"> <span id="form"></span></a>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html"><img src="assets/imgs/flag-hc-top.svg" alt="HackClub Flag" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
@@ -41,47 +46,16 @@
               </li>
             </ul>
           </div>
-          <div class="nav-icon-linkR"> </div>
-          <button class="nav-menu-button"><img class="nav-menu-icon" src="assets/imgs/hamenu.png" alt="Hamburger Menu" /></button>
- 
-       </div>
-
-       <div class="nav-items-menu" id="">
-        <ul class="nav-items-list">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="howtojoin.html">Why us?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Meet us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cp.html">Competitive Programming</a>
-          </li>
-        </ul>
-      </div>
-      
+        </div>
       </nav>
-      <div id="particles"></div>
-      <br />
-      <div class="titletext">
-        <h1>STEM Egypt Hack Club</h1>
-        <a href="index.html"> <span id="form"></span></a>
-      </div>
-      
     </div>
     <div class="my-bg pb-5 mt-0">
       <div id="main" class="container mx-auto">
         <div class="content">
           <div class="club-goals section-container">
             <h1 class="welcome">Our Club Goals</h1>
-            <div class="goals-cards-container">
-              <div class="goals-card">
+            <div class="row gx-3 gy-5">
+              <div class="col-lg">
                 <div class="card text-center h-100 p-0">
                   <div class="card-img-top mt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -94,7 +68,7 @@
                   <div class="card-body d-flex align-items-center justify-content-center"><p class="card-text text-white text-center">Together, we utilize our expertise to build each other up to become better makers and hackers as a whole!</p></div>
                 </div>
               </div>
-              <div class="goals-card">
+              <div class="col-lg">
                 <div class="card text-center h-100 p-0">
                   <div class="card-img-top mt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -107,7 +81,7 @@
                   <div class="card-body d-flex align-items-center justify-content-center"><p class="card-text text-white text-center">Develop your skills by building quirky, unique projects</p></div>
                 </div>
               </div>
-              <div class="goals-card">
+              <div class="col-lg">
                 <div class="card text-center h-100 p-0">
                   <div class="card-img-top mt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -118,7 +92,7 @@
                   <div class="card-body d-flex align-items-center justify-content-center"><p class="card-text text-white text-center">Free sessions for everyone to participate and learn something new</p></div>
                 </div>
               </div>
-              <div class="goals-card">
+              <div class="col-lg">
                 <div class="card text-center h-100 p-0">
                   <div class="card-img-top mt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -162,13 +136,13 @@
           </div>
         </div>
       </div>
-      <div class="highlights-container mx-auto">
-        <div class="highlights-content">
+      <div class="container mx-auto">
+        <div class="content">
           <div class="highlights section-container">
             <h1 class="welcome">Highlights</h1>
             <p>Here are the best projects and articles for the season!</p>
             <div class="card-grid">
-              <div class="card card-highlights">
+              <div class="card">
                 <a href="https://github.com/Mohanad-Elagan/Hack-Club-STEM-Egypt-Data/tree/main/Hackathons/Semicolon-Supremacy" target="_blank"
                   ><img class="cardImgs" src="assets/imgs/projects/super.png" />
                   <h1 class="card-title">Semicolon Supremacy</h1>
@@ -200,10 +174,23 @@
         </div>
       </div>
 
-      <!-- <center><button onclick="modeFunction()">Dark/Light Mode</button></center> -->
+      <center><button onclick="modeFunction()">Dark/Light Mode</button></center>
       <div class="container-fluid footer-container">
       <footer class="py-5 container-lg">
-            <div class="footer-row">
+        <div class="row g-0">
+          <div class="col-lg d-flex justify-content-center">
+            <div>
+              <h5 class="fw-bold">Hack Club</h5>
+              <ul class="list-unstyled ps-2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howtojoin.html">Why Us?</a></li>
+                <li><a href="contact.html">Meet Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg d-flex justify-content-center">
+            <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="128" height="45" fill="#fff" viewBox="0 0 256 90" aria-label="Hack Club logo">
                 <path d="M75.156 38.08l6.475 1.105s1.798-11.402-.224-10.199l-6.251 9.094zM204.85 34.495l2.161 5.06s5.237-2.106 4.619-4.915c-.537-2.442-3.098-1.496-5.641-.557h-.001c-.382.142-.764.282-1.138.412zM207.752 43.455s1.483 6.212 1.421 5.93c-.007-.093.397-.247 1.002-.477 2.014-.766 6.257-2.379 4.999-5.453-1.636-3.997-7.422 0-7.422 0z"></path>
                 <path
@@ -212,31 +199,34 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <div>
-                
-                  
-                  <a href="https://github.com/Mohanad-Elagan/Hack-Club-STEM-Egypt-Data" title="GitHub">
-                    <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
-                      <g>
-                        <path
-                          d="M18.837,27.966c8.342,-0.241 9.163,-1.997 9.163,-11.966c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,9.995 0.826,11.734 9.228,11.968c0.073,-0.091 0.1,-0.205 0.1,-0.321c0,-0.25 -0.01,-2.816 -0.015,-3.699c-3.037,0.639 -3.678,-1.419 -3.678,-1.419c-0.497,-1.222 -1.213,-1.548 -1.213,-1.548c-0.991,-0.656 0.075,-0.643 0.075,-0.643c1.096,0.075 1.673,1.091 1.673,1.091c0.974,1.617 2.556,1.15 3.178,0.879c0.099,-0.683 0.381,-1.15 0.693,-1.414c-2.425,-0.267 -4.974,-1.175 -4.974,-5.23c0,-1.155 0.426,-2.099 1.124,-2.839c-0.113,-0.268 -0.487,-1.344 0.107,-2.8c0,0 0.917,-0.285 3.003,1.084c0.871,-0.235 1.805,-0.352 2.734,-0.356c0.927,0.004 1.861,0.121 2.734,0.356c2.085,-1.369 3,-1.084 3,-1.084c0.596,1.456 0.221,2.532 0.108,2.8c0.7,0.74 1.123,1.684 1.123,2.839c0,4.065 -2.553,4.96 -4.986,5.221c0.392,0.327 0.741,0.973 0.741,1.96c0,0.946 -0.006,2.619 -0.01,3.728c-0.002,0.549 -0.003,0.959 -0.003,1.074c0,0.109 0.029,0.224 0.095,0.319Z"
-                        ></path>
-                      </g>
-                    </svg>
-                  </a>
-              
+              <div style="width: 200px">
+                <div class="row gy-3 my-3">
 
-                
-                  <a href="mailto:hackclub@stemegypt.edu.eg" title="Email">
-                    <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="email" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
-                      <g>
-                        <path
-                          d="M25.709,21.048c0.241,-1.212 0.291,-2.792 0.291,-5.048c0,-2.256 -0.05,-3.836 -0.291,-5.048c-0.216,-1.11 -0.533,-1.577 -0.864,-1.853c-0.384,-0.32 -1.094,-0.641 -2.597,-0.844c-1.531,-0.209 -3.522,-0.255 -6.248,-0.255c-2.725,0 -4.717,0.046 -6.248,0.255c-1.503,0.203 -2.213,0.524 -2.597,0.844c-0.331,0.276 -0.648,0.743 -0.864,1.853c-0.241,1.212 -0.291,2.792 -0.291,5.048c0,2.256 0.05,3.836 0.291,5.048c0.216,1.11 0.533,1.577 0.864,1.853c0.384,0.32 1.094,0.641 2.597,0.843c1.531,0.21 3.523,0.256 6.248,0.256c2.726,0 4.717,-0.046 6.248,-0.256c1.503,-0.202 2.213,-0.523 2.597,-0.843c0.331,-0.276 0.648,-0.743 0.864,-1.853Zm-9.709,4.952c11,0 12,-0.833 12,-10c0,-9.167 -1,-10 -12,-10c-11,0 -12,0.833 -12,10c0,9.167 1,10 12,10Zm-8.651,-14.774c0.411,-0.344 1.023,-0.289 1.366,0.124c1.335,1.601 5.617,5.318 7.285,6.592c1.696,-1.296 5.931,-4.963 7.285,-6.592c0.343,-0.413 0.955,-0.468 1.366,-0.124c0.412,0.344 0.467,0.957 0.124,1.37c-0.695,0.838 -2.02,2.129 -3.429,3.404c1.409,1.275 2.734,2.566 3.429,3.404c0.343,0.412 0.288,1.026 -0.124,1.37c-0.411,0.344 -1.023,0.289 -1.366,-0.124c-0.662,-0.798 -2.015,-2.083 -3.422,-3.339c-1.102,0.95 -2.137,1.789 -2.841,2.291c-0.302,0.213 -0.644,0.398 -1.022,0.398c-0.378,0 -0.72,-0.185 -1.021,-0.398c-0.691,-0.492 -1.728,-1.335 -2.835,-2.292c-1.414,1.264 -2.775,2.556 -3.429,3.34c-0.343,0.413 -0.955,0.468 -1.366,0.124c-0.411,-0.344 -0.467,-0.957 -0.124,-1.37l0.001,-0.001c0.683,-0.822 2.018,-2.119 3.436,-3.403c-1.418,-1.284 -2.753,-2.582 -3.436,-3.403l-0.001,-0.001c-0.343,-0.413 -0.287,-1.026 0.124,-1.37Z"
-                        ></path>
-                      </g>
-                    </svg>
-                  </a>
-                
+                  <div class="col-3">
+                    <a href="https://github.com/Mohanad-Elagan/Hack-Club-STEM-Egypt-Data" title="GitHub">
+                      <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                        <g>
+                          <path
+                            d="M18.837,27.966c8.342,-0.241 9.163,-1.997 9.163,-11.966c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,9.995 0.826,11.734 9.228,11.968c0.073,-0.091 0.1,-0.205 0.1,-0.321c0,-0.25 -0.01,-2.816 -0.015,-3.699c-3.037,0.639 -3.678,-1.419 -3.678,-1.419c-0.497,-1.222 -1.213,-1.548 -1.213,-1.548c-0.991,-0.656 0.075,-0.643 0.075,-0.643c1.096,0.075 1.673,1.091 1.673,1.091c0.974,1.617 2.556,1.15 3.178,0.879c0.099,-0.683 0.381,-1.15 0.693,-1.414c-2.425,-0.267 -4.974,-1.175 -4.974,-5.23c0,-1.155 0.426,-2.099 1.124,-2.839c-0.113,-0.268 -0.487,-1.344 0.107,-2.8c0,0 0.917,-0.285 3.003,1.084c0.871,-0.235 1.805,-0.352 2.734,-0.356c0.927,0.004 1.861,0.121 2.734,0.356c2.085,-1.369 3,-1.084 3,-1.084c0.596,1.456 0.221,2.532 0.108,2.8c0.7,0.74 1.123,1.684 1.123,2.839c0,4.065 -2.553,4.96 -4.986,5.221c0.392,0.327 0.741,0.973 0.741,1.96c0,0.946 -0.006,2.619 -0.01,3.728c-0.002,0.549 -0.003,0.959 -0.003,1.074c0,0.109 0.029,0.224 0.095,0.319Z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="col-3">
+                    <a href="mailto:hackclub@stemegypt.edu.eg" title="Email">
+                      <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="email" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                        <g>
+                          <path
+                            d="M25.709,21.048c0.241,-1.212 0.291,-2.792 0.291,-5.048c0,-2.256 -0.05,-3.836 -0.291,-5.048c-0.216,-1.11 -0.533,-1.577 -0.864,-1.853c-0.384,-0.32 -1.094,-0.641 -2.597,-0.844c-1.531,-0.209 -3.522,-0.255 -6.248,-0.255c-2.725,0 -4.717,0.046 -6.248,0.255c-1.503,0.203 -2.213,0.524 -2.597,0.844c-0.331,0.276 -0.648,0.743 -0.864,1.853c-0.241,1.212 -0.291,2.792 -0.291,5.048c0,2.256 0.05,3.836 0.291,5.048c0.216,1.11 0.533,1.577 0.864,1.853c0.384,0.32 1.094,0.641 2.597,0.843c1.531,0.21 3.523,0.256 6.248,0.256c2.726,0 4.717,-0.046 6.248,-0.256c1.503,-0.202 2.213,-0.523 2.597,-0.843c0.331,-0.276 0.648,-0.743 0.864,-1.853Zm-9.709,4.952c11,0 12,-0.833 12,-10c0,-9.167 -1,-10 -12,-10c-11,0 -12,0.833 -12,10c0,9.167 1,10 12,10Zm-8.651,-14.774c0.411,-0.344 1.023,-0.289 1.366,0.124c1.335,1.601 5.617,5.318 7.285,6.592c1.696,-1.296 5.931,-4.963 7.285,-6.592c0.343,-0.413 0.955,-0.468 1.366,-0.124c0.412,0.344 0.467,0.957 0.124,1.37c-0.695,0.838 -2.02,2.129 -3.429,3.404c1.409,1.275 2.734,2.566 3.429,3.404c0.343,0.412 0.288,1.026 -0.124,1.37c-0.411,0.344 -1.023,0.289 -1.366,-0.124c-0.662,-0.798 -2.015,-2.083 -3.422,-3.339c-1.102,0.95 -2.137,1.789 -2.841,2.291c-0.302,0.213 -0.644,0.398 -1.022,0.398c-0.378,0 -0.72,-0.185 -1.021,-0.398c-0.691,-0.492 -1.728,-1.335 -2.835,-2.292c-1.414,1.264 -2.775,2.556 -3.429,3.34c-0.343,0.413 -0.955,0.468 -1.366,0.124c-0.411,-0.344 -0.467,-0.957 -0.124,-1.37l0.001,-0.001c0.683,-0.822 2.018,-2.119 3.436,-3.403c-1.418,-1.284 -2.753,-2.582 -3.436,-3.403l-0.001,-0.001c-0.343,-0.413 -0.287,-1.026 0.124,-1.37Z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

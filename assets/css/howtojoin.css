@@ -21,12 +21,7 @@
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 30rem;
+  height: 85vh;
   background-image: linear-gradient(32deg, rgb(207, 45, 228) 0%, rgb(228, 45, 66) 64%, rgb(206, 41, 60) 100%);
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
   clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
@@ -37,7 +32,8 @@
 .hero .myquote {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  margin-left: 10rem;
+  font-size: 6rem;
   line-height: 1.2;
 }
 
@@ -46,16 +42,16 @@
 }
 
 .hero .myquote span:nth-child(1) {
-  margin-left: 0%;
+  margin-left: -10rem;
 }
 .hero .myquote span:nth-child(2) {
-  margin-left: 10%;
+  margin-left: -5rem;
 }
 .hero .myquote span:nth-child(3) {
-  margin-left: 35%;
+  margin-left: 0rem;
 }
 .hero .myquote span:nth-child(4) {
-  margin-left: 60%;
+  margin-left: 20rem;
   position: relative;
 }
 
@@ -66,17 +62,16 @@
   clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   background-color: rgba(252, 252, 252, 0.625);
   mix-blend-mode: overlay;
-  /* right: -1%; */
-  right: -0.4rem;
-  width: 130%;
-  height: 100%;
+  right: -0.5rem;
+  width: 21.85rem;
+  height: 5.75rem;
 }
 
 .hero .title {
   position: absolute;
   background-color: #0b0e14;
-  bottom: -5rem;
-  left: 10%;
+  bottom: -4rem;
+  left: 10rem;
   color: white;
   /* mix-blend-mode: screen; */
   width: 12rem;
@@ -94,83 +89,3 @@
 .hero .title span {
   font-size: 1.2rem !important;
 }
-
-@media (min-width: 400px) {
-  .hero .myquote {
-    font-size: 2.3rem;
-    line-height: 1.2;
-  }
-
-
-}
-
-@media (min-width: 500px) {
-  .hero .myquote {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-
-  .hero .myquote span:nth-child(4)::before {
-    right: -1.25rem;
-    width: 130%;
-    height: 100%;
-  }
-}
-
-@media (min-width: 600px) {
-  .hero .myquote {
-    font-size: 3.25rem;
-    line-height: 1.2;
-  }
-  .hero .myquote span:nth-child(4)::before {
-    right: 1%;
-    width: 120%;
-    height: 100%;
-  }
-
-}
-
-@media (min-width: 769px) {
-  .hero .myquote {
-    font-size: 3.5rem;
-    line-height: 1.2;
-  }
-
-  .hero {
-    height: 40rem;
-  }
-  .hero .myquote span:nth-child(4)::before {
-    right: 1.5rem;
-    width: 110%;
-    height: 100%;
-  }
-
-  .hero .title {
-    bottom: -3.5rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .hero .myquote {
-    font-size: 5rem;
-  }
-
-  .hero{
-    height: 45rem;
-  }
-/* 
-  .hero .myquote span:nth-child(4)::before
-  {
-      right: -0.5rem;
-      width: 21.85rem;
-      height: 5.75rem;
-  } */
-
-  .hero .myquote span:nth-child(4)::before {
-    right: 9%;
-    width: 110%;
-    height: 100%;
-  }
-  
-}
-
