@@ -10,3 +10,19 @@
     })
   });
 })();
+
+$(document).ready(function() {
+    $('.year_2022').click(function() {
+      $('.year_2022').addClass('selected');
+      $('.year_2023').removeClass('selected');
+      $('.board-2023').addClass('hidden'); 
+      $('.board-2022').removeClass('hidden');
+    });
+
+    $('.year_2023').click(function() {
+      $('.year_2023').addClass('selected');
+      $('.year_2022').removeClass('selected');
+      $('.board-2022').addClass('hidden'); 
+      $('.board-2023').removeClass('hidden');
+    });
+  });
