@@ -1,3 +1,9 @@
+* {
+  transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
 @font-face {
   font-family: "Phantom Sans";
   src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
@@ -94,3 +100,33 @@
 .board .card .card-title {
   font-size: 1.75rem;
 }
+
+.years {
+  margin-top: 45px;
+  
+}
+
+.year {  
+  cursor: pointer;
+  background-color:transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.year:hover {
+  border: 2px solid #3a863d;
+  transition: .3s;
+}
+
+.selected {
+  background-color: #3a863d;
+  border: 2px solid #fff;
+}
+
+.hidden {
+  display: none;
+}
+
